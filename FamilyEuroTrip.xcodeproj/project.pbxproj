@@ -9,14 +9,19 @@
 /* Begin PBXBuildFile section */
 		64273122282B443400DE8001 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64273121282B443400DE8001 /* AppDelegate.swift */; };
 		64273124282B443400DE8001 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64273123282B443400DE8001 /* SceneDelegate.swift */; };
-		64273126282B443400DE8001 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64273125282B443400DE8001 /* ViewController.swift */; };
-		64273129282B443400DE8001 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64273127282B443400DE8001 /* Main.storyboard */; };
 		6427312C282B443400DE8001 /* FamilyEuroTrip.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6427312A282B443400DE8001 /* FamilyEuroTrip.xcdatamodeld */; };
 		6427312E282B443700DE8001 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6427312D282B443700DE8001 /* Assets.xcassets */; };
 		64273131282B443700DE8001 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6427312F282B443700DE8001 /* LaunchScreen.storyboard */; };
 		6427313C282B443800DE8001 /* FamilyEuroTripTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6427313B282B443800DE8001 /* FamilyEuroTripTests.swift */; };
 		64273146282B443800DE8001 /* FamilyEuroTripUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64273145282B443800DE8001 /* FamilyEuroTripUITests.swift */; };
 		64273148282B443800DE8001 /* FamilyEuroTripUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64273147282B443800DE8001 /* FamilyEuroTripUITestsLaunchTests.swift */; };
+		64273159282B44F500DE8001 /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64273158282B44F500DE8001 /* CoordinatorProtocol.swift */; };
+		6427315C282B457A00DE8001 /* DomainEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6427315B282B457A00DE8001 /* DomainEnums.swift */; };
+		6427315E282B473B00DE8001 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6427315D282B473B00DE8001 /* MainCoordinator.swift */; };
+		64273161282B47EE00DE8001 /* TodayVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6427315F282B47EE00DE8001 /* TodayVCViewController.swift */; };
+		64273164282B48CF00DE8001 /* TodayVCViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64273166282B48CF00DE8001 /* TodayVCViewController.xib */; };
+		6427316D282B4B6600DE8001 /* MainVCFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6427316C282B4B6600DE8001 /* MainVCFactory.swift */; };
+		6427316F282B4CDA00DE8001 /* TypeAlias.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6427316E282B4CDA00DE8001 /* TypeAlias.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,8 +45,6 @@
 		6427311E282B443400DE8001 /* FamilyEuroTrip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FamilyEuroTrip.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64273121282B443400DE8001 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		64273123282B443400DE8001 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		64273125282B443400DE8001 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		64273128282B443400DE8001 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6427312B282B443400DE8001 /* FamilyEuroTrip.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FamilyEuroTrip.xcdatamodel; sourceTree = "<group>"; };
 		6427312D282B443700DE8001 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		64273130282B443700DE8001 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +54,16 @@
 		64273141282B443800DE8001 /* FamilyEuroTripUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FamilyEuroTripUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		64273145282B443800DE8001 /* FamilyEuroTripUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyEuroTripUITests.swift; sourceTree = "<group>"; };
 		64273147282B443800DE8001 /* FamilyEuroTripUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyEuroTripUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		64273158282B44F500DE8001 /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
+		6427315B282B457A00DE8001 /* DomainEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainEnums.swift; sourceTree = "<group>"; };
+		6427315D282B473B00DE8001 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		6427315F282B47EE00DE8001 /* TodayVCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayVCViewController.swift; sourceTree = "<group>"; };
+		64273163282B48C100DE8001 /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-419"; path = "es-419.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		64273165282B48CF00DE8001 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/TodayVCViewController.xib; sourceTree = "<group>"; };
+		64273168282B48D900DE8001 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/TodayVCViewController.strings; sourceTree = "<group>"; };
+		6427316A282B48E000DE8001 /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-419"; path = "es-419.lproj/TodayVCViewController.strings"; sourceTree = "<group>"; };
+		6427316C282B4B6600DE8001 /* MainVCFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVCFactory.swift; sourceTree = "<group>"; };
+		6427316E282B4CDA00DE8001 /* TypeAlias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeAlias.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,12 +114,12 @@
 		64273120282B443400DE8001 /* FamilyEuroTrip */ = {
 			isa = PBXGroup;
 			children = (
-				64273121282B443400DE8001 /* AppDelegate.swift */,
-				64273123282B443400DE8001 /* SceneDelegate.swift */,
-				64273125282B443400DE8001 /* ViewController.swift */,
-				64273127282B443400DE8001 /* Main.storyboard */,
-				6427312D282B443700DE8001 /* Assets.xcassets */,
-				6427312F282B443700DE8001 /* LaunchScreen.storyboard */,
+				6427316B282B4B3600DE8001 /* Factories */,
+				6427315A282B456700DE8001 /* Enums */,
+				64273157282B44E000DE8001 /* Coordinators */,
+				64273156282B447700DE8001 /* VC */,
+				64273155282B446B00DE8001 /* Views */,
+				64273154282B444D00DE8001 /* Resources */,
 				64273132282B443700DE8001 /* Info.plist */,
 				6427312A282B443400DE8001 /* FamilyEuroTrip.xcdatamodeld */,
 			);
@@ -128,6 +141,59 @@
 				64273147282B443800DE8001 /* FamilyEuroTripUITestsLaunchTests.swift */,
 			);
 			path = FamilyEuroTripUITests;
+			sourceTree = "<group>";
+		};
+		64273154282B444D00DE8001 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				64273121282B443400DE8001 /* AppDelegate.swift */,
+				64273123282B443400DE8001 /* SceneDelegate.swift */,
+				6427312D282B443700DE8001 /* Assets.xcassets */,
+				6427316E282B4CDA00DE8001 /* TypeAlias.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		64273155282B446B00DE8001 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				64273166282B48CF00DE8001 /* TodayVCViewController.xib */,
+				6427312F282B443700DE8001 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		64273156282B447700DE8001 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				6427315F282B47EE00DE8001 /* TodayVCViewController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		64273157282B44E000DE8001 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				64273158282B44F500DE8001 /* CoordinatorProtocol.swift */,
+				6427315D282B473B00DE8001 /* MainCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		6427315A282B456700DE8001 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				6427315B282B457A00DE8001 /* DomainEnums.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		6427316B282B4B3600DE8001 /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				6427316C282B4B6600DE8001 /* MainVCFactory.swift */,
+			);
+			path = Factories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,6 +282,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"es-419",
 			);
 			mainGroup = 64273115282B443400DE8001;
 			productRefGroup = 6427311F282B443400DE8001 /* Products */;
@@ -236,7 +303,7 @@
 			files = (
 				64273131282B443700DE8001 /* LaunchScreen.storyboard in Resources */,
 				6427312E282B443700DE8001 /* Assets.xcassets in Resources */,
-				64273129282B443400DE8001 /* Main.storyboard in Resources */,
+				64273164282B48CF00DE8001 /* TodayVCViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,9 +328,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				64273126282B443400DE8001 /* ViewController.swift in Sources */,
+				64273161282B47EE00DE8001 /* TodayVCViewController.swift in Sources */,
 				64273122282B443400DE8001 /* AppDelegate.swift in Sources */,
+				6427315E282B473B00DE8001 /* MainCoordinator.swift in Sources */,
+				6427316F282B4CDA00DE8001 /* TypeAlias.swift in Sources */,
 				64273124282B443400DE8001 /* SceneDelegate.swift in Sources */,
+				6427316D282B4B6600DE8001 /* MainVCFactory.swift in Sources */,
+				64273159282B44F500DE8001 /* CoordinatorProtocol.swift in Sources */,
+				6427315C282B457A00DE8001 /* DomainEnums.swift in Sources */,
 				6427312C282B443400DE8001 /* FamilyEuroTrip.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -301,20 +373,23 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		64273127282B443400DE8001 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				64273128282B443400DE8001 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		6427312F282B443700DE8001 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				64273130282B443700DE8001 /* Base */,
+				64273163282B48C100DE8001 /* es-419 */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		64273166282B48CF00DE8001 /* TodayVCViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				64273165282B48CF00DE8001 /* Base */,
+				64273168282B48D900DE8001 /* en */,
+				6427316A282B48E000DE8001 /* es-419 */,
+			);
+			name = TodayVCViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -324,6 +399,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -384,6 +460,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -445,7 +522,7 @@
 				INFOPLIST_FILE = FamilyEuroTrip/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -472,7 +549,7 @@
 				INFOPLIST_FILE = FamilyEuroTrip/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
